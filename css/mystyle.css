@@ -1,0 +1,899 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+/*start global*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.container{
+    margin: auto;
+}
+.cover{
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+.over-lay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.center{
+    text-align: center;
+}
+.box{
+    position: relative;
+    margin: 0 auto;
+}
+.box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-sizing: border-box;   
+}
+.box .text{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+}
+   /*end global*/
+
+
+   /*start header*/
+.header{
+    background: url(../img/img2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #000;
+    z-index: 3;
+}
+.header .nav-bar .rieght ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.header .nav-bar .rieght ul li .active, .header .nav-bar .rieght ul li a:hover{
+    text-decoration: underline;
+    color: rgba(255,0,0,1);
+}
+#type-writer{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 1.5;
+}
+
+   /*end header*/
+
+
+    /*start about me*/
+.about-me{
+    text-transform: capitalize;
+    overflow: hidden;
+    width: 100%;
+}
+.about-me .box{
+    color: #000;
+}
+.about-me .box:before{
+    border: 10px solid #000; 
+}
+.about-me .box .text{
+    background-color: rgba(0,0,0,0.2);
+    border: 5px solid #000;
+}
+.about-me .box .text h1{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-me .content .image{
+    overflow: hidden;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.about-me .content .image img{
+    width: 100%;
+}
+.about-me .content .qualifications ul{
+    padding: 0;
+    line-height: 1.3;
+    font-size: 1.2em;
+    padding-right: 2%;
+}
+.about-me .content .qualifications ul li{
+    padding: 5px 0;
+}
+.about-me .content .qualifications h3{
+    font-size: 1.5em; 
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.about-me .content .qualifications h5{
+    margin: 10px;
+    font-size: 1.1em;
+    font-weight: normal;
+    
+}
+    /*end about me*/
+
+
+
+    /*start professional skills*/
+.my-skills{
+    background: url(../img/img5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.my-skills .box{
+    color: #fff; 
+    margin-top: 100px;
+}
+.my-skills .box:before{
+    border: 10px solid #fff; 
+}
+.my-skills .box .text{
+    background-color: rgba(255,255,255,0.2);
+    border: 5px solid #fff;
+}
+.my-skills .box .text h1{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.my-skills .all-charts{
+    width: 100%;
+}
+.my-skills .all-charts .rate{
+    float: left;
+    height: 170px;
+}
+.my-skills .all-charts .rate .chart{
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+.my-skills .all-charts .rate .chart h3{
+    margin-top: 50px;
+}
+.my-skills .all-charts .rate .chart canvas{
+    position: absolute;
+    top: -38%;
+    left: 0;
+}
+    /*end professional skills*/
+
+         /*start my work*/
+.my-work{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0 50px;
+    overflow: hidden;
+}
+.my-work .box{
+    color: #000; 
+    margin-top: 100px;
+}
+.my-work .box:before{
+    border: 10px solid #000; 
+}
+.my-work .box .text{
+    background-color: rgba(0,0,0,0.2);
+    border: 5px solid #000;
+}
+.my-work .box .text h1{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+}
+.my-work .itmes-box{
+    margin-top: 100px;
+}
+.my-work .itmes-box .item{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.my-work .itmes-box .item:before{
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,0,0,1);
+    z-index: 1;
+    mix-blend-mode: soft-light;
+}
+.my-work .itmes-box .item:hover:before{
+    bottom: 0;
+}
+.my-work .itmes-box .item img{
+    width: 100%;
+    transition: 1.5s;
+}
+.my-work .itmes-box .item:hover img{
+    transform: scale(1.3);
+}
+.my-work .itmes-box .item .over{
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    transition: 1.5s;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+}
+.my-work .itmes-box .item:hover .over{
+    bottom: 0;
+    z-index: 5;
+}
+.my-work .itmes-box .item .over h3{
+    font-size: 1.5em;
+    padding: 0;
+    margin: 5px 0;
+}
+.my-work .itmes-box .item .over button{
+    margin-bottom: 3%;
+    background-color: #fff;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.my-work .itmes-box .item .over button a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;    
+}
+.my-work .itmes-box .item .over button a:hover{
+    color: rgba(255,0,0,1);
+}
+         /*end my work*/
+ 
+         /*start capabilities*/
+.capabilities{
+    width: 100%;
+    text-align: center;  
+}
+.capabilities .box{
+    color: #000; 
+    margin-top: 100px;
+}
+.capabilities .box:before{
+    border: 10px solid #000; 
+}
+.capabilities .box .text{
+    background-color: rgba(0,0,0,0.2);
+    border: 5px solid #000;
+}
+.capabilities .box .text h1{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+}
+.capabilities p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(0,0,0,0.7);
+    margin-top: 60px;
+}
+.capabilities .icon{
+    margin-top: 50px;
+    color: rgba(0,0,0,0.7);
+}
+.capabilities .icon h3{
+    font-weight: bold;
+    font-size: 1.7em;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    margin: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.capabilities .icon h3:hover{
+    color: rgba(255,0,0,1);
+}
+.cv{
+    background: url(../img/img4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin: 200px 0;
+    padding: 120px 0;
+}
+.cv h1{
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+.cv button{
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: 2px solid rgba(0,0,0,0.6);
+}
+.cv button a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.cv button a:hover{
+    color: rgba(255,0,0,1);
+}
+         /*end capabilities*/
+
+
+         /*start contact me*/
+.contact-me{
+    background: url(../img/img3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-me .box{
+    color: #fff; 
+    margin-top: 100px;
+}
+.contact-me .box:before{
+    border: 10px solid #fff; 
+}
+.contact-me .box .text{
+    background-color: rgba(255,255,255,0.2);
+    border: 5px solid #fff;
+}
+.contact-me .box .text h1{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.contact-me ul{
+    list-style-type: none;
+    background-color: rgba(225,225,225,0.6);
+    padding: 30px;
+    color: #fff;
+    border-radius: 10px;
+}
+.contact-me ul li{
+    display: flex;
+    margin: 20px auto 0;
+    padding: 20px 0;
+    transition: .5s;
+}
+.contact-me ul li:nth-child(1){
+   background-color: rgba(0,0,0,0.7); 
+}
+.contact-me ul li:nth-child(2){
+   background-color: rgba(0,0,0,0.55); 
+}
+.contact-me ul li:nth-child(3){
+   background-color: rgba(0,0,0,0.4); 
+}
+.contact-me ul li:nth-child(4){
+   background-color: rgba(0,0,0,0.25); 
+}
+.contact-me ul li span:nth-child(1){ 
+    text-align: left;
+}
+.contact-me ul li span:nth-child(2){
+    text-align: center;
+}
+.contact-me ul li span:nth-child(3){ 
+    text-align: right;
+}
+.contact-me ul li:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+.contact-me ul li:nth-child(1):hover{
+   background-color: rgba(0,0,0,0.25); 
+}
+.contact-me ul li:nth-child(2):hover{
+   background-color: rgba(0,0,0,0.4); 
+}
+.contact-me ul li:nth-child(3):hover{
+   background-color: rgba(0,0,0,0.55); 
+}
+.contact-me ul li:nth-child(4):hover{
+   background-color: rgba(0,0,0,0.7); 
+}
+.contact-me .copy-rights{
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+         /*end contact me*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+         /*start frame work*/
+
+@media (max-width: 767px){
+    .container{
+        padding: 0 15px !important; 
+    } 
+    .box{
+        width: 74%;
+        height: 120px;
+        font-size: 1.5em;
+    }
+/*start header*/
+    .header{
+      height: 600px;
+    }
+    .header .nav-bar{
+      height: 10%;
+   }
+    .header .nav-bar .left{
+        float: none;
+        text-align: center;
+        padding: 10px 0 0 0;
+        font-size: 2em;
+    }
+    .header .nav-bar .rieght{
+        float: none;
+        font-size: .82em;
+        padding: 0;
+        margin: 0;
+    }
+    .header .nav-bar .rieght ul{
+        display: inline-block;
+        margin: auto;
+        padding: 0;
+        align-content: center;
+    }
+    .header .nav-bar .rieght ul li{
+        display: inline-block;
+        padding: 10px 3px;
+  }
+    #type-writer{
+        font-size: 2.2em;
+  }
+/*end header*/
+    
+    
+/*start about me*/
+    .about-me{
+        padding: 100px 0;
+   }
+    .about-me .box .text h1{
+        bottom: -15%;
+        font-size: 1.5em;
+   }
+    .about-me .content{
+        margin-top: 40px;
+   }
+    .about-me .content .image{
+      width: 100%;
+      height: 350px;
+      float: none;
+   }
+   .about-me .content .qualifications{
+    width: 100%;
+    float: none;
+   }
+/*end about me*/
+    
+    
+/*start professional skills*/
+  .my-skills{
+      height: 950px;
+   }
+  .my-skills .box .text h1{
+      bottom: -35%;
+   }
+  .my-skills .all-charts{
+      margin-top: 20%;
+   }
+  .my-skills .all-charts .rate{
+      width: 50%;
+   }
+  /*end professional skills*/
+
+ /*start my work*/
+  .my-work{
+      height: 1420px;
+    }
+  .my-work .box .text h1{
+      bottom: -15%;
+      font-size: 1.5em;
+   }
+  .my-work .itmes-box .item{
+      float: none;
+      width: 100%;
+      margin-bottom: 20px;
+   }
+ /*end my work*/  
+
+
+ /*start capabilities*/
+  .capabilities{
+      height: 1350px;
+      padding-top: 100px;
+   }
+  .capabilities .box .text h1{
+      bottom: -15%;
+      font-size: 1.5em;
+   }
+  .capabilities .icon{
+      float: none;
+      width: 100%;
+   }
+/*end capabilities*/
+
+
+/*start contact me*/
+  .contact-me{
+      height: 800px;
+   }
+  .contact-me .box .text h1{
+      bottom: -15%;
+      font-size: 1.5em;
+   } 
+  .contact-me ul{
+      width: 80%;
+      margin: 50px auto 10px;
+   }
+  .contact-me ul li{
+      font-size: .9em;
+   }
+  .contact-me ul li span:nth-child(1){
+      width: 5%;
+      margin-left: 3%;
+   }
+  .contact-me ul li span:nth-child(2){
+    width: 30%;
+   }
+  .contact-me ul li span:nth-child(3){
+      width: 60%;
+      margin-right: 3%;
+   }
+/*end contact me*/
+}
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+@media (min-width: 768px){
+   .container{
+        width: 750px;
+    }
+   .box{
+        width: 60%;
+        height: 140px;
+        font-size: 1.7em;
+    }
+/*start header*/
+   .header{
+        height: 800px;
+    }
+   .header .nav-bar{
+      height: 13%;
+   }
+    .header .nav-bar .left{
+        float: none;
+        text-align: center;
+        padding: 10px 0 0 0;
+        font-size: 2em;
+    }
+    .header .nav-bar .rieght{
+        float: none;
+        font-size: 1em;
+    }
+   .header .nav-bar .rieght ul li{
+        display: inline-block;
+        padding: 0 20px;
+        margin: auto;
+  }
+    #type-writer{
+        font-size: 2.6em;
+  }
+/*end header*/
+    
+    
+/*start about me*/
+    .about-me{
+        padding: 150px 0;
+   }
+    .about-me .box .text h1{
+        bottom: -15%;
+        font-size: 1.7em;
+   }
+    .about-me .content{
+        width: 90%;
+        margin: 80px auto;
+   }
+    .about-me .content .image{
+      height: 450px;
+      float: none;
+   }
+   .about-me .content .qualifications{
+    width: 100%;
+    float: none;
+   }
+/*end about me*/
+    
+    
+/*start professional skills*/
+  .my-skills{
+      height: 950px;
+   }
+  .my-skills .box .text h1{
+      bottom: -35%;
+   }
+  .my-skills .all-charts{
+      margin-top: 20%;
+   }
+  .my-skills .all-charts .rate{
+      width: 33.333333%;
+   }
+  /*end professional skills*/
+
+ /*start my work*/
+  .my-work{
+      height: 900px;
+    }
+  .my-work .box .text h1{
+      bottom: -15%;
+      font-size: 1.5em;
+   }
+  .my-work .itmes-box .item{
+      float: left;
+      width: 46%;
+      margin: 20px 2%;
+      height: 160px;
+   }
+ /*end my work*/  
+
+
+ /*start capabilities*/
+  .capabilities{
+      height: 1000px;
+      padding-top: 100px;
+   }
+  .capabilities .box .text h1{
+      bottom: -15%;
+      font-size: 1.5em;
+   }
+  .capabilities .icon{
+      float: left;
+      width: 50%;
+   }
+/*end capabilities*/
+
+
+/*start contact me*/
+  .contact-me{
+      height: 800px;
+   }
+  .contact-me .box .text h1{
+      bottom: -15%;
+      font-size: 1.5em;
+   } 
+  .contact-me ul{
+      width: 80%;
+      margin: 50px auto 10px;
+   }
+  .contact-me ul li{
+      font-size: .9em;
+   }
+  .contact-me ul li span:nth-child(1){
+      width: 5%;
+      margin-left: 3%;
+   }
+  .contact-me ul li span:nth-child(2){
+    width: 30%;
+   }
+  .contact-me ul li span:nth-child(3){
+      width: 60%;
+      margin-right: 3%;
+   }
+/*end contact me*/
+}
+
+/*------------------------------------------------------------*/
+@media (min-width: 992px){
+  .container{
+        width: 970px; 
+    }
+  .box{
+        width: 40%;
+        height: 150px;
+   }
+    /*start header*/
+  .header{
+      height: 100vh;
+   }
+  .header .nav-bar{
+      height: 10%;
+   }
+   .header .nav-bar .left{
+        float: left;
+        text-align: left;
+        padding: 20px 0 0 0;
+        font-size: 2em;
+    }
+    .header .nav-bar .rieght{
+        float: right;
+   }
+    .header .nav-bar .rieght ul{
+        margin-top: 20px;
+        padding: 0;    
+    }
+  .header .nav-bar .rieght ul li{
+     display: inline-block;
+     padding: 10px 0 0 20px;
+   }
+  #type-writer{
+        font-size: 3em;
+   }
+/*end header*/
+    
+/*start about me*/
+  .about-me{
+      padding: 200px 0;
+   }
+  .about-me .box .text h1{
+       bottom: -15%;
+      font-size: 57px;
+   }
+  .about-me .content{
+      margin-top: 80px;
+   }
+  .about-me .content .image{
+      width: 50%;
+      height: 350px;
+      float: right;
+   }
+  .about-me .content .qualifications{
+      width: 50%;
+      float: left;
+   }
+/*end about me*/ 
+    
+/*start professional skills*/
+  .my-skills{
+      height: 100vh;
+   }
+  .my-skills .box .text h1{
+        bottom: -15%;
+      font-size: 57px;
+   }
+  .my-skills .all-charts{
+      margin-top: 8%;
+   }
+  .my-skills .all-charts .rate{
+      width: 25%;
+   }
+  /*end professional skills*/
+    
+  /*start my work*/
+  .my-work{
+      height: 100vh;
+   }
+  .my-work .box .text h1{
+       bottom: -15%;
+      font-size: 57px;
+   }
+  .my-work .itmes-box .item{
+     float: left;
+     margin: 10px;
+     height: 170px;
+     width: calc(33.3333% - 20px);
+   }
+  /*end my work*/
+  
+  /*start capabilities*/
+  .capabilities{
+      height: 500px;
+   }
+  .capabilities .box .text h1{
+        bottom: -15%;
+      font-size: 57px;
+   }
+  .capabilities .icon{
+      float: left;
+      width: 20%;
+   }
+/*end capabilities*/
+    
+/*start contact me*/
+  .contact-me{
+      height: 1000px;
+   }
+  .contact-me .box .text h1{
+      bottom: -15%;
+      font-size: 57px;
+   }
+  .contact-me ul{
+      width: 60%;
+      margin: 100px auto 50px;
+   }
+  .contact-me ul li{
+      font-size: 1.5em;
+   }
+  .contact-me ul li span:nth-child(1){
+      width: 20%;
+      margin-left: 5%;
+   }
+  .contact-me ul li span:nth-child(2){
+      width: 35%;
+   }
+  .contact-me ul li span:nth-child(3){
+      width: 35%;
+      margin-right: 5%;
+   }
+/*end contact me*/
+}
+/*------------------------------------------------------------*/
+@media (min-width: 1200px){
+  .container{
+        width: 1170px;
+    }  
+}
+
+       /*end frame work*/
+
+
+
+
+
+
+
+
+
+
+
+
