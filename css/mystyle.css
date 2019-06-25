@@ -53,6 +53,41 @@ body{
 }
    /*end global*/
 
+    /*start navbar*/
+.nav-bar{
+    overflow: auto;
+    width: 100%;
+    background-color: #000;
+    z-index: 3;
+}
+.nav-bar .left h1{
+    float: left;
+    text-align: left;
+    color: #fff;
+}  
+.nav-bar .left .togller{
+    background-color:#fff;
+    padding: 5px;
+    cursor: pointer;
+    float: right;
+    border: none;
+    margin-top: 4%;
+    z-index: 10;
+    border-radius: 5px;
+}
+.nav-bar .left .togller	span{
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    margin: 4px auto;
+}
+.nav-bar .rieght ul li .active, .nav-bar .rieght ul li a:hover{
+    text-decoration: underline;
+    color: rgba(255,0,0,1);
+}
+    /*end navbar*/
+
 
    /*start header*/
 .header{
@@ -60,28 +95,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.header .nav-bar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    background-color: #000;
-    z-index: 3;
-}
-.header .nav-bar .rieght ul li a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
-.header .nav-bar .rieght ul li .active, .header .nav-bar .rieght ul li a:hover{
-    text-decoration: underline;
-    color: rgba(255,0,0,1);
-}
 #type-writer{
     position: absolute;
     left: 50%;
-    top: 45%;
     transform: translateX(-50%);
     text-align: center;
     line-height: 1.5;
@@ -347,7 +363,6 @@ body{
     position: relative;
     left: 0;
     bottom: 0;
-    margin: 200px 0;
     padding: 120px 0;
 }
 .cv h1{
@@ -462,6 +477,8 @@ body{
 
          /*start frame work*/
 
+
+
 @media (max-width: 767px){
     .container{
         padding: 0 15px !important; 
@@ -471,38 +488,48 @@ body{
         height: 120px;
         font-size: 1.5em;
     }
+/*start navbar*/
+    .nav-bar .left h1{
+        font-size: 1.5em;
+        padding: 0;
+        margin-top: 5%;
+   }
+    .nav-bar .left .togller{
+        display: block;
+   }
+    .nav-bar .rieght{
+        float: right;
+        width: 100%;
+    }
+    .nav-bar .rieght ul{
+        display: none;
+        padding: 0 10px;
+        align-content: center;
+        margin: 0 auto;
+    }
+    .nav-bar .rieght ul li{
+        display: block;
+        float:none;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 2px solid rgba(255,255,255,0.2);
+   }
+    .nav-bar .rieght ul li a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+   }
+/*end navbar*/
+    
 /*start header*/
     .header{
-      height: 600px;
-    }
-    .header .nav-bar{
-      height: 10%;
+        height: 600px;
    }
-    .header .nav-bar .left{
-        float: none;
-        text-align: center;
-        padding: 10px 0 0 0;
-        font-size: 2em;
-    }
-    .header .nav-bar .rieght{
-        float: none;
-        font-size: .82em;
-        padding: 0;
-        margin: 0;
-    }
-    .header .nav-bar .rieght ul{
-        display: inline-block;
-        margin: auto;
-        padding: 0;
-        align-content: center;
-    }
-    .header .nav-bar .rieght ul li{
-        display: inline-block;
-        padding: 10px 3px;
-  }
     #type-writer{
         font-size: 2.2em;
-  }
+        top: 30%;
+   }
 /*end header*/
     
     
@@ -511,8 +538,8 @@ body{
         padding: 100px 0;
    }
     .about-me .box .text h1{
-        bottom: -15%;
-        font-size: 1.5em;
+        bottom: -5%;
+        font-size: 1.32em;
    }
     .about-me .content{
         margin-top: 40px;
@@ -549,13 +576,14 @@ body{
       height: 1420px;
     }
   .my-work .box .text h1{
-      bottom: -15%;
-      font-size: 1.5em;
+      bottom: -5%;
+      font-size: 1.32em;
    }
   .my-work .itmes-box .item{
       float: none;
       width: 100%;
       margin-bottom: 20px;
+      height: 155px;
    }
  /*end my work*/  
 
@@ -572,6 +600,9 @@ body{
   .capabilities .icon{
       float: none;
       width: 100%;
+   }
+   .cv{
+      margin: 300px 0;
    }
 /*end capabilities*/
 
@@ -596,10 +627,10 @@ body{
       margin-left: 3%;
    }
   .contact-me ul li span:nth-child(2){
-    width: 30%;
+    width: 25%;
    }
   .contact-me ul li span:nth-child(3){
-      width: 60%;
+      width: 65%;
       margin-right: 3%;
    }
 /*end contact me*/
@@ -615,30 +646,33 @@ body{
         height: 140px;
         font-size: 1.7em;
     }
-/*start header*/
-   .header{
-        height: 800px;
-    }
-   .header .nav-bar{
+/*start navbar*/
+   .nav-bar{
       height: 13%;
    }
-    .header .nav-bar .left{
-        float: none;
-        text-align: center;
-        padding: 10px 0 0 0;
-        font-size: 2em;
-    }
-    .header .nav-bar .rieght{
+   .nav-bar .left h1{
+       font-size: 1.5em;
+       padding: 10px 0 0 0;
+   } 
+    .nav-bar .rieght{
         float: none;
         font-size: 1em;
+        display: none;
     }
-   .header .nav-bar .rieght ul li{
+   .nav-bar .rieght ul li{
         display: inline-block;
         padding: 0 20px;
         margin: auto;
   }
+/*start navbar*/
+    
+/*start header*/
+   .header{
+        height: 800px;
+    }
     #type-writer{
         font-size: 2.6em;
+        top: 40%;
   }
 /*end header*/
     
@@ -752,32 +786,43 @@ body{
         width: 40%;
         height: 150px;
    }
+    /*start navbar*/
+   .nav-bar{
+      height: 10%;
+   }
+  .nav-bar .left h1{
+       font-size: 2em;
+       padding: 20px 0 0 0;
+       margin: 0;
+   } 
+  .nav-bar .left .togller{
+        display: none;
+   }
+  .nav-bar .rieght{
+        float: right;
+        display: block;
+   }
+  .nav-bar .rieght ul{
+        margin-top: 20px;
+        padding: 0;    
+    }
+  .nav-bar .rieght ul li{
+     display: inline-block;
+     padding: 10px 0 0 20px;
+   }
+  .nav-bar .rieght ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+   }
+    /*end navbar*/
     /*start header*/
   .header{
       height: 100vh;
    }
-  .header .nav-bar{
-      height: 10%;
-   }
-   .header .nav-bar .left{
-        float: left;
-        text-align: left;
-        padding: 20px 0 0 0;
-        font-size: 2em;
-    }
-    .header .nav-bar .rieght{
-        float: right;
-   }
-    .header .nav-bar .rieght ul{
-        margin-top: 20px;
-        padding: 0;    
-    }
-  .header .nav-bar .rieght ul li{
-     display: inline-block;
-     padding: 10px 0 0 20px;
-   }
   #type-writer{
         font-size: 3em;
+        top: 35%;
    }
 /*end header*/
     
@@ -847,6 +892,10 @@ body{
       float: left;
       width: 20%;
    }
+  .cv{
+      margin: 200px 0;
+   }
+
 /*end capabilities*/
     
 /*start contact me*/

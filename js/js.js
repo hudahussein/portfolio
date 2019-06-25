@@ -35,7 +35,7 @@ window.onload = function () {
 
  //add active class to links
     
-    $('.header .nav-bar .rieght ul li a').click(function () {
+    $('.nav-bar .rieght ul li a').click(function () {
         
         $(this).addClass("active").parent().siblings().find("a").removeClass("active");
     });
@@ -51,9 +51,9 @@ window.onload = function () {
         
      var blockid=$(this).attr('id');
         
-        $('.header .nav-bar .rieght ul li a').removeClass("active");
+        $('.nav-bar .rieght ul li a').removeClass("active");
         
-        $(".header .nav-bar .rieght ul li a[data-scroll='" +blockid+ "']").addClass('active');
+        $(".nav-bar .rieght ul li a[data-scroll='" +blockid+ "']").addClass('active');
         
             }
         });
@@ -61,7 +61,16 @@ window.onload = function () {
 
 
 
+// toggle class
 
+ $(function (){
+     
+         $('.nav-bar .togller').on('click', function(){
+             
+            $('.nav-bar ul').slideToggle();
+             
+                    });
+                }); 
 
 
 
