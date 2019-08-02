@@ -136,6 +136,8 @@ body{
 }
 .about-me .content .image img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .about-me .content .qualifications ul{
     padding: 0 3%;
@@ -213,7 +215,7 @@ body{
 .my-work{
     height: 100vh;
     width: 100%;
-    padding: 100px 0 50px;
+    padding: 50px 0;
     overflow: hidden;
 }
 .my-work .box{
@@ -527,7 +529,7 @@ body{
    }
     #type-writer{
         font-size: 2.2em;
-        top: 30%;
+        top: 20%;
    }
 /*end header*/
     
@@ -787,7 +789,8 @@ body{
    }
     /*start navbar*/
    .nav-bar{
-      height: 10%;
+       height: 10%;
+       padding: 10px 0;
    }
   .nav-bar .left h1{
        font-size: 2em;
