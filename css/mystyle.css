@@ -591,8 +591,8 @@ body{
 
  /*start capabilities*/
   .capabilities{
-      height: 1350px;
-      padding-top: 100px;
+      height: 1300px;
+      padding-top: 50px;
    }
   .capabilities .box .text h1{
       bottom: -15%;
